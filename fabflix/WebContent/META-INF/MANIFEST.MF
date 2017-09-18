@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Class-Path: ../WEB-INFlib/mysql-connector-java-5.1.38-bin.jar ../WEB-INFlib/servlet-api.jar ../WEB-INFlib/jstl-1.2.jar ../WEB-INFlib/javax.json-1.0.jar
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<script>
+function validateForm(frm)
+{
+    if(frm.Email.value=="")
+    {
+      alert("User Name should not be left blank");
+      frm.Email.focus();
+      return false;
+    }
+    else if(frm.password.value=="")
+    {
+      alert("Password cannot not be left blank");
+      frm.password.focus();
+      return false;
+    }
+}
+
+</script>
+
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" charset="UTF-8">
+  <title>Fabflix Movie Store Login Form</title>
+  <link rel="stylesheet" href="css/style.css">
+<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body>
+
+  <section class="container">
+    <div class="login">
+      <h1>Fabflix Movie Store Customer Login</h1>
+      <form name="frm" method="post" action="LoginServlet"  onSubmit="return validateForm(frm)">
+        <p><input type="text" name="Email" value="" placeholder="Email Address"></p>
+        <p><input type="password" name="password" value="" placeholder="Password"></p>
+        <p class="rm">
+          <label>
+            <input type="checkbox" name="rm" id="rm">
+            Remember me...
+          </label>
+        </p>
+        <p class="submit"><input type="submit" name="commit" value="Login"> <a href="customer_registration.jsp" >Or Register</a></p>
+      <div class="g-recaptcha" data-sitekey="6LdrKx4TAAAAAD8OVJiDP_kan0b5WTzzSpwptSki"></div>
+      </form>
+    </div>
+  </section>
+ 
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html >
+
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" charset="UTF-8">
+  <title></title>
+
+</head>
+
+<body onLoad="document.forms.frm.">
+
+
+
+  <section class="container">
+    <div class="login">
+     <h1>Metadata Display</h1>
+      <form name="frm" id=216 method="get" action="MetadataServlet" >
+        <p> Select table to display Metadata:
+		<select name="dbTable">
+		  <option value="All" selected="selected">All</option>
+		  <option value="movies">movies</option>
+		  <option value="creditcards">creditcards</option>
+		  <option value="customers">customers</option>
+		  <option value="stars">stars</option>
+		  <option value="genres">genres</option>
+		  <option value="employees">employees</option>
+		  <option value="stars_in_movies">stars_in_movies</option>
+		  <option value="sales">sales</option>
+		  <option value="genres_in_movies">genres_in_movies</option>
+		</select>
+		</p>
+        <p class="submit"><input type="submit" name="commit" value="View Fabflix Metadata">
+        
+        </p>
+      </form>
+      
+    </div>
+  </section>
+ 
+</body>
+</html>

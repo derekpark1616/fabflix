@@ -1,0 +1,9 @@
+The LIKE predicate is used for every attribute that a user can search for. 
+We prepend and append the '%' to any search query so that an input such as:
+'Ben' becomes '%Ben%' and would match with all values that contain 'Ben'.
+
+This is specifically done in the file SrchMovieServlet.java, where the movie title,
+year, and director are fixed with the '%'.
+The star is adjusted with '%' in MovieProcess.java in the searchMovies() method. 
+These adjusted search querys are then appended to the mySQL query along with the
+LIKE clause. 

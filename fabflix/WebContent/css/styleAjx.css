@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+
+div.PopUp {
+    position: relative;
+    display: block;
+    background-color: #40F2F2; /* Fix to make div clickable in IE */
+    
+    width: 260px;
+    height: 20;
+    padding:20px
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link */
+    z-index: 10; /* Places the link above everything else in the div */
+}
+ 
+div.PopUp a {
+    position: absolute;
+    width: 260px;
+    height: 20;
+    padding:20px
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link */
+    z-index: 10; /* Places the link above everything else in the div */
+    background-color: #40F2F2; /* Fix to make div clickable in IE */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+}
