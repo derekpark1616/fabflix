@@ -1,15 +1,15 @@
-<%@ page import="fabflix.*" %>
+<%@ page import="fabflix.*"%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    
- <%@ page language="java" import="java.sql.*, 
+	pageEncoding="UTF-8"%>
+
+<%@ page language="java"
+	import="java.sql.*, 
 	java.util.*,
 	java.io.IOException,
 	javax.servlet.http.*,
-	javax.servlet.*"
-%>        
-    
+	javax.servlet.*"%>
+
 <!DOCTYPE html>
 <html>
 
@@ -90,81 +90,103 @@ catch(java.lang.Exception ex)
 <body>
 
 
-  <div id="Main">
-   
-	<h1 align="center"> Welcome to our Online Shopping Store </h1> <hr>
-   	
-	
-	<table id="Items" align="center" border="1" bgcolor="lightgreen">
-		
-		<tr>
-		<td>Movie ID</td><td>Movie Banner</td><td>Movie Title</td><td>Quantity</td>
-		</tr>
-		
-		<tr>
-		<td><%=mvId%></td><td><a href =" <%=mvBan%>">Banner URL</a></td><td><%=mvTitle%></td><td><%=mvQt%></td>
-		</tr>
-		
-		<tr>
-		<td> <a href = main_page.jsp> Return to shopping </a></td><td><a href="purchase.jsp">Products Checkout</a></td>
-		
-		</tr>
-	
-	</table>
-  
-  </div>
+	<div id="Main">
 
-  <div id="Cart" style="display:none">
-	
-	<h1 align="center">Online Shopping Cart</h1>
-   
-	<table id="tablecart" align="center" border="1" bgcolor="lightgreen">
-	
-		<tr>
-			<td>Total</td>
-			<td id="Total"></td>
-		</tr>
-	</table>
-	
-   <p align="center"> <a href="#" onclick="return show('Main','Cart');">Return</a> </p>
-  
-  </div>
-  
-  
-  <p align="center"> Updating quantity in the cart </p>
-  
-  
- <section class="container">
-    <div class="login">
-      <h1> Enter here some data about the movie you want to update quantity</h1>
-      <form name="frm" method="post" action="updateQteServlet"  onSubmit="return validateForm(frm)">
-        <p><input type="number" name="movieId" value="" placeholder="Type exact Movie Id to update"></p>
-        <p><input type="number" name="qte" MIN ="0" value="0" placeholder="Type the quantity you want or 0 to delete"></p>
-        <p class="rm">
-     
-        </p>
-        <p class="submit"><input type="submit" name="commit" value="Update"></p>
-      </form>
-    </div>
-  </section> 
-  
-  <section class="container">
-    <div class="login">
-      <h1> Use this from to empty you entire shopping cart</h1>
-      <form name="frm" method="post" action="emptyCartServlet"  onSubmit="return validateForm(frm)">
-        <p><input type="number" name="movieId" value="" placeholder="Type exact Movie Id to update"></p>
-        
-        <p class="rm">
-     
-        </p>
-        <p class="submit"><input type="submit" name="commit" value="Empty the Cart Now"></p>
-      </form>
-    </div>
-  </section> 
-  
-<form action="<%=response.encodeURL("LogoutServlet") %>" method="post">
-<input type="submit" value=" or Click to Logout" >
-</form>
+		<h1 align="center">Welcome to our Online Shopping Store</h1>
+		<hr>
+
+
+		<table id="Items" align="center" border="1" bgcolor="lightgreen">
+
+			<tr>
+				<td>Movie ID</td>
+				<td>Movie Banner</td>
+				<td>Movie Title</td>
+				<td>Quantity</td>
+			</tr>
+
+			<tr>
+				<td><%=mvId%></td>
+				<td><a href=" <%=mvBan%>">Banner URL</a></td>
+				<td><%=mvTitle%></td>
+				<td><%=mvQt%></td>
+			</tr>
+
+			<tr>
+				<td><a href=main_page.jsp> Return to shopping </a></td>
+				<td><a href="purchase.jsp">Products Checkout</a></td>
+
+			</tr>
+
+		</table>
+
+	</div>
+
+	<div id="Cart" style="display: none">
+
+		<h1 align="center">Online Shopping Cart</h1>
+
+		<table id="tablecart" align="center" border="1" bgcolor="lightgreen">
+
+			<tr>
+				<td>Total</td>
+				<td id="Total"></td>
+			</tr>
+		</table>
+
+		<p align="center">
+			<a href="#" onclick="return show('Main','Cart');">Return</a>
+		</p>
+
+	</div>
+
+
+	<p align="center">Updating quantity in the cart</p>
+
+
+	<section class="container">
+		<div class="login">
+			<h1>Enter here some data about the movie you want to update
+				quantity</h1>
+			<form name="frm" method="post" action="updateQteServlet"
+				onSubmit="return validateForm(frm)">
+				<p>
+					<input type="number" name="movieId" value=""
+						placeholder="Type exact Movie Id to update">
+				</p>
+				<p>
+					<input type="number" name="qte" MIN="0" value="0"
+						placeholder="Type the quantity you want or 0 to delete">
+				</p>
+				<p class="rm"></p>
+				<p class="submit">
+					<input type="submit" name="commit" value="Update">
+				</p>
+			</form>
+		</div>
+	</section>
+
+	<section class="container">
+		<div class="login">
+			<h1>Use this from to empty you entire shopping cart</h1>
+			<form name="frm" method="post" action="emptyCartServlet"
+				onSubmit="return validateForm(frm)">
+				<p>
+					<input type="number" name="movieId" value=""
+						placeholder="Type exact Movie Id to update">
+				</p>
+
+				<p class="rm"></p>
+				<p class="submit">
+					<input type="submit" name="commit" value="Empty the Cart Now">
+				</p>
+			</form>
+		</div>
+	</section>
+
+	<form action="<%=response.encodeURL("LogoutServlet") %>" method="post">
+		<input type="submit" value=" or Click to Logout">
+	</form>
 
 
 

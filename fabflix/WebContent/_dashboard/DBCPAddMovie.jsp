@@ -57,23 +57,28 @@ function validateForm(frm)
 	<section class="container">
 		<div class="login">
 			<h1>Fabflix Movie Insertion Form</h1>
-			<form name="frm" method="get" action="../DBCPStoredProcServlet" onSubmit="return validateForm(frm)">
+			<form name="frm" method="get" action="../DBCPStoredProcServlet"
+				onSubmit="return validateForm(frm)">
 				<p>Inserting a Movie in the database</p>
 				<p>
 					<input type="text" name="ttle" value="" placeholder="Movie Title">
 				</p>
 				<p>
-					<input type="number" name="yr" value="" placeholder="Year of Release">
+					<input type="number" name="yr" value=""
+						placeholder="Year of Release">
 				</p>
 				<p>
-					<input type="text" name="director" value="" placeholder="Movie Director">
+					<input type="text" name="director" value=""
+						placeholder="Movie Director">
 				</p>
 				<p>
-					<input type="text" name="fName" value="" placeholder="Star First Name">
+					<input type="text" name="fName" value=""
+						placeholder="Star First Name">
 				</p>
-	
+
 				<p>
-					<input type="text" name="lName" value="" placeholder="Star Last Name">
+					<input type="text" name="lName" value=""
+						placeholder="Star Last Name">
 				</p>
 
 				<p>
@@ -82,12 +87,12 @@ function validateForm(frm)
 				<p>
 					Connection pooling (Yes or No): <select name="pool">
 						<option value="yes" selected="selected">Yes</option>
-						<option value="no">No</option>	
+						<option value="no">No</option>
 					</select>
 				</p>
 				<p class="submit">
-					<input type="submit" name="commit" value="Insert Movie">
-					<input type="reset" name="clearForn" value="Clear Form">
+					<input type="submit" name="commit" value="Insert Movie"> <input
+						type="reset" name="clearForn" value="Clear Form">
 				</p>
 			</form>
 		</div>

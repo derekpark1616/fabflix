@@ -36,29 +36,34 @@ function validateForm(frm)
 	<section class="container">
 		<div class="login">
 			<h1>Fabflix Movie Star Insertion Form</h1>
-			<form name="frm" method="get" action="../DBCPInsertStarServlet" onSubmit="return validateForm(frm)">
+			<form name="frm" method="get" action="../DBCPInsertStarServlet"
+				onSubmit="return validateForm(frm)">
 				<p>Inserting a Star in the database</p>
 				<p>
-					<input type="text" name="fName" value="" placeholder="Star First Name">
+					<input type="text" name="fName" value=""
+						placeholder="Star First Name">
 				</p>
 				<p>
-					<input type="text" name="lName" value="" placeholder="Star Last name">
+					<input type="text" name="lName" value=""
+						placeholder="Star Last name">
 				</p>
 				<p>
-					<input type="text" name="dob" value="" placeholder="Star DOB (yyyy-MM-dd)">
+					<input type="text" name="dob" value=""
+						placeholder="Star DOB (yyyy-MM-dd)">
 				</p>
 				<p>
-					<input type="text" name="Photo" value="" placeholder="Star URL Photo">
+					<input type="text" name="Photo" value=""
+						placeholder="Star URL Photo">
 				</p>
-<p>
+				<p>
 					Connection pooling (Yes or No): <select name="pool">
 						<option value="yes" selected="selected">Yes</option>
-						<option value="no">No</option>	
+						<option value="no">No</option>
 					</select>
 				</p>
 				<p class="submit">
-					<input type="submit" name="commit" value="Insert Star">
-					<input type="reset" name="clearForn" value="Clear Form">
+					<input type="submit" name="commit" value="Insert Star"> <input
+						type="reset" name="clearForn" value="Clear Form">
 				</p>
 			</form>
 		</div>

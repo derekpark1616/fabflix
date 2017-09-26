@@ -1,8 +1,8 @@
-<%@ page import="fabflix.*" %>
+<%@ page import="fabflix.*"%>
 
-<%@ page language="java" import="java.sql.*" %>
+<%@ page language="java" import="java.sql.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
 <html>
@@ -14,7 +14,7 @@
 
 <body>
 
-<%
+	<%
 String userName = null;
 //allow access only if session exists
 if(session.getAttribute("user") == null){
@@ -29,27 +29,32 @@ if(session.getAttribute("user") == null){
 }
 %>
 
-<table >
+	<table>
 
-  <tr>
-    <td colspan="3" align="center"><%@ include file="../WEB-INF/dboard/header.jsp"%></td>
-  </tr>
-   <tr>
-    <td colspan="3" align="center"><%@ include file="metadataRequest.html"%></td>
-  </tr>
-  
-  <tr>
-    <td width="50%" height="138"><%@ include file="DBCPinsertStar.jsp"%>&nbsp;</td><td width="50%" height="138"><%@ include file="DBCPAddMovie.jsp"%>&nbsp;</td>  
-  </tr>
-  
-  
-  <tr>
-    <td colspan="3" align="center"><%@ include file="../WEB-INF/dboard/footer.jsp"%></td>
-  </tr>
-  
-  
-  
-</table>
+		<tr>
+			<td colspan="3" align="center"><%@ include
+					file="../WEB-INF/dboard/header.jsp"%></td>
+		</tr>
+		<tr>
+			<td colspan="3" align="center"><%@ include
+					file="metadataRequest.html"%></td>
+		</tr>
+
+		<tr>
+			<td width="50%" height="138"><%@ include
+					file="DBCPinsertStar.jsp"%>&nbsp;</td>
+			<td width="50%" height="138"><%@ include file="DBCPAddMovie.jsp"%>&nbsp;</td>
+		</tr>
+
+
+		<tr>
+			<td colspan="3" align="center"><%@ include
+					file="../WEB-INF/dboard/footer.jsp"%></td>
+		</tr>
+
+
+
+	</table>
 
 </body>
 </html>

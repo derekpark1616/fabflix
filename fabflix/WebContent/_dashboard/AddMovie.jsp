@@ -57,31 +57,36 @@ function validateForm(frm)
 	<section class="container">
 		<div class="login">
 			<h1>Fabflix Movie Insertion Form</h1>
-			<form name="frm" method="get" action="../StoredProcServlet" onSubmit="return validateForm(frm)">
+			<form name="frm" method="get" action="../StoredProcServlet"
+				onSubmit="return validateForm(frm)">
 				<p>Inserting a Movie in the database</p>
 				<p>
 					<input type="text" name="ttle" value="" placeholder="Movie Title">
 				</p>
 				<p>
-					<input type="number" name="yr" value="" placeholder="Year of Release">
+					<input type="number" name="yr" value=""
+						placeholder="Year of Release">
 				</p>
 				<p>
-					<input type="text" name="director" value="" placeholder="Movie Director">
+					<input type="text" name="director" value=""
+						placeholder="Movie Director">
 				</p>
 				<p>
-					<input type="text" name="fName" value="" placeholder="Star First Name">
+					<input type="text" name="fName" value=""
+						placeholder="Star First Name">
 				</p>
-	
+
 				<p>
-					<input type="text" name="lName" value="" placeholder="Star Last Name">
+					<input type="text" name="lName" value=""
+						placeholder="Star Last Name">
 				</p>
 
 				<p>
 					<input type="text" name="genre" value="" placeholder="Movie Genre">
 				</p>
 				<p class="submit">
-					<input type="submit" name="commit" value="Insert Movie">
-					<input type="reset" name="clearForn" value="Clear Form">
+					<input type="submit" name="commit" value="Insert Movie"> <input
+						type="reset" name="clearForn" value="Clear Form">
 				</p>
 			</form>
 		</div>

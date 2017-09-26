@@ -1,8 +1,8 @@
-<%@ page import="fabflix.*" %>
-<%@ page language="java" import="java.sql.*" %>
+<%@ page import="fabflix.*"%>
+<%@ page language="java" import="java.sql.*"%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html >
 
 <html>
@@ -15,6 +15,10 @@
 <body>
 
 
-<div align="center"><a href="empDashboard.jsp">Employee Home</a> ||  <a href="empaccess.html">Employee Login</a> || <a href="logout.jsp">Store Front or Logout</a></div>
+	<div align="center">
+		<a href="empDashboard.jsp">Employee Home</a> || <a
+			href="empaccess.html">Employee Login</a> || <a href="logout.jsp">Store
+			Front or Logout</a>
+	</div>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html >
 
 <html>
@@ -33,23 +33,23 @@
 				<p>
 					<input type="hidden" name="pg" value="1">
 				</p>
-				
+
 				<p>
 					Make a Selection: <select name="nRows">
 						<option value="10" selected="selected">50</option>
 						<option value="25">25</option>
 						<option value="50">50</option>
 						<option value="100">100</option>
-            			<option value="200">200</option>
+						<option value="200">200</option>
 					</select>
 				</p>
 				<p>
 					Connection pooling (Yes or No): <select name="pool">
 						<option value="yes" selected="selected">Yes</option>
-						<option value="no">No</option>	
+						<option value="no">No</option>
 					</select>
 				</p>
-				
+
 				<p class="submit">
 					<input type="submit" name="commit" value="Search...">
 				</p>

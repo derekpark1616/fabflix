@@ -5,13 +5,28 @@
 <title>Optimization Technique for XML Parsing</title>
 </head>
 <body>
-<p>We used caching as the first technique where we loaded the list of stars and movies and saved them in a list array (loadMivies, loadMovies2 and loadStars methods are for this...). <br>This for checking against the existence of a record before updating the tables<br>
-Here also with intelligently avoid making too much database connection request. <br>We open the database connection at the start of the parsing for all 3 xml file and close the connection at the end... This is cool <br>
-</p>
-<p> The second technique combined the use of caching and preparedstatment. This Reduces parsing time as the preparation on <br>the query is done only once (even if the statement is executed multiple times)<br>
-<br>Only the changed parameters are sent back to the server, not the whole query, thus reducing the bandwidth usage<br>Another benefit is Security...It Prevents SQL injections, <br>because the original SQL statement is not derived from external input.<br>
- 
-With this technique, parsing process for all 3 files only took 4 minutes.</p> 
+	<p>
+		We used caching as the first technique where we loaded the list of
+		stars and movies and saved them in a list array (loadMivies,
+		loadMovies2 and loadStars methods are for this...). <br>This for
+		checking against the existence of a record before updating the tables<br>
+		Here also with intelligently avoid making too much database connection
+		request. <br>We open the database connection at the start of the
+		parsing for all 3 xml file and close the connection at the end... This
+		is cool <br>
+	</p>
+	<p>
+		The second technique combined the use of caching and preparedstatment.
+		This Reduces parsing time as the preparation on <br>the query is
+		done only once (even if the statement is executed multiple times)<br>
+		<br>Only the changed parameters are sent back to the server, not
+		the whole query, thus reducing the bandwidth usage<br>Another
+		benefit is Security...It Prevents SQL injections, <br>because the
+		original SQL statement is not derived from external input.<br>
+
+		With this technique, parsing process for all 3 files only took 4
+		minutes.
+	</p>
 
 </body>
 </html>

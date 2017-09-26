@@ -33,14 +33,14 @@
 				<p>
 					<input type="hidden" name="pg" value="1">
 				</p>
-				
+
 				<p>
 					Make a Selection: <select name="nRows">
 						<option value="10" selected="selected">10</option>
 						<option value="25">25</option>
 						<option value="50">50</option>
 						<option value="100">100</option>
-            			<option value="200">200</option>
+						<option value="200">200</option>
 					</select>
 				</p>
 				<p class="submit">
